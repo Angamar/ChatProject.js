@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista za kupovinu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lista za kupovinu</h1>
+    <ul>
+        <li>Jabuke</li>
+        <li>Trešnje</li>
+        <li>Jagode</li>
+    </ul>
+
+    <input type="text" name="newTask" id="newTask">
+    <br>
+    <input type="radio" name="addTask" id="append" value="append" checked> Append
+    <input type="radio" name="addTask" id="prepend" value="prepend"> Prepend
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCUgueQbnur2ki_Vy7ft9PgwpM2ngGbbDY",
+    authDomain: "todolist-9fafd.firebaseapp.com",
+    databaseURL: "https://todolist-9fafd.firebaseio.com",
+    projectId: "todolist-9fafd",
+    storageBucket: "todolist-9fafd.appspot.com",
+    messagingSenderId: "330481209343",
+    appId: "1:330481209343:web:63a633f4ddeb9c388561ca"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  let db = firebase.firestore();
+</script>
+
+<script src="script1.js">
+    
+</script>
+</body>
+</html>

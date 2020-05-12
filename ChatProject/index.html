@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITBootcamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <header>
+            <h1>ITBootcamp Chat</h1>
+            <nav>
+                <h2>Choose a chatroom</h2>
+                <div>
+                    <button id="general" class="btn">#general</button>
+                    <button  id="js" class="btn">#js</button>
+                    <button  id="test" class="btn">#test</button>
+                    <button  id="homework" class="btn">#homework</button>
+                </div>
+            </nav>
+         </header>
+        <section>
+            <ul>
+                <!-- Poruke -->
+            </ul>
+        </section>
+        <footer>
+            <form id="formNewMessage">
+                <input type="text" name="inputMessage" id="inputMessage" placeholder="Your message...">
+                <input type="submit" value="Send" id="btnSend" class="btn">
+            </form>
+            <form id="formUpdateUsername">
+                <input type="text" name="inputUsername" id="inputUsername" placeholder="New username...">
+                <input type="submit" value="Update username" id="btnUpdateUsername" class="btn">
+            </form>
+            <div id="divUpdatedUsername"></div>
+        </footer>
+    </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAEy9eudOWr3_AaAo1Q_OThD2CSSdTd_D4",
+    authDomain: "chatproject-6f6c1.firebaseapp.com",
+    databaseURL: "https://chatproject-6f6c1.firebaseio.com",
+    projectId: "chatproject-6f6c1",
+    storageBucket: "chatproject-6f6c1.appspot.com",
+    messagingSenderId: "638271061780",
+    appId: "1:638271061780:web:23f40beb5d08b6bf0fcc01"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  let db = firebase.firestore();
+</script>
+<script src="app.js" type="module"></script>
+</body>
+</html>
