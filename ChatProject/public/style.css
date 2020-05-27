@@ -9,6 +9,7 @@ body{
     color: purple;
 }
 .btn{
+    margin: 5px;
     width: 200px;
     height: 40px;
     font-size: 18px;
@@ -21,17 +22,36 @@ body{
     background-color: rgb(70,9,70);
     cursor: pointer;
 }
+
+#delete {
+    width: 15px;
+    position: absolute;
+    right: 10px;
+
+
+}
+
+#dateStart, #dateEnd {
+    width: 224px;
+}
 form{
     margin: 5px;
+
     width: 100%;
 }
-input{
-    font-size: 20px;
-    height: 30px;
-    width: 400px;
+input, textarea, select{
+
+    vertical-align: middle;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    width: 450px;
     border-radius: 5px;
+    resize: none;
 }
-input:focus{
+
+
+input:focus, textarea:focus{
     outline-width: 0px;
     border: 3px solid purple;
     border-radius: 5px;
@@ -71,18 +91,19 @@ ul{
     word-wrap: break-word;
 }
 ul>li{
-    /* width: 60%; */
+    width: 60%; 
     background-color: thistle;
     margin-bottom: 10px;
     margin-right: 5px;
     padding: 20px;
-    /* border-radius: 0px 20px 20px 20px; */
+    border-radius: 0px 20px 20px 20px;
 }
-/* .me{
+ .me{
     margin-left: auto;
     background-color: bisque !important;
     border-radius: 20px 0px 20px 20px !important;
-} */
+} 
+
 .username{
     font-weight: bold;
 }
@@ -95,17 +116,19 @@ ul>li{
 #spanNewUsername{
     font-weight: bold;
 }
-/* 
+
 .btn-selected{
     background-color: rgb(50, 10, 50);
     color: bisque;
-} */
+} 
+
+
 /* Tablet i mobilni telefon */
 @media only screen and (max-width: 850px) {
     h1, h2{
         font-size: 20px;
     }
-    button.btn, input{
+    button.btn, input, textarea{
         width: 45%;
         font-size: 15px !important;
         margin-bottom: 3px !important;
@@ -118,4 +141,5 @@ ul>li{
     ul>li{
         padding: 10px;
     }
+
 }
